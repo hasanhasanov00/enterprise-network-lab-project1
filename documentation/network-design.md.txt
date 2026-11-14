@@ -1,0 +1,27 @@
+# Network Design
+
+## Overview
+
+This project was created to simulate a small company network using Cisco Packet Tracer.
+
+The network has four main departments: HR, IT, Sales and Servers. Each department is connected to its own access switch, and all access switches are connected to the core switch.
+
+## Network Structure
+
+- CORE-SW connects the access switches.
+- HR-SW connects HR computers.
+- IT-SW connects IT computers.
+- SALES-SW connects Sales computers.
+- SERVER-SW connects the servers.
+- COMPANY-RTR handles routing between VLANs and WAN connectivity.
+- ISP-RTR simulates the external network.
+
+## Main Features
+
+- Separate VLANs for each department.
+- Communication between VLANs through router-on-a-stick.
+- Automatic IP configuration using DHCP.
+- Internal DNS and HTTP services.
+- ACL rules to restrict access to the web server.
+- SSH for remote router management.
+- NAT/PAT for external connectivity.

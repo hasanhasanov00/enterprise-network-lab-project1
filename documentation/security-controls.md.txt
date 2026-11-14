@@ -1,0 +1,37 @@
+# Security Controls
+
+This document describes the security configurations used in the network.
+
+## 1. VLAN Segmentation
+
+The network is divided into four VLANs:
+
+- VLAN 10 - HR
+- VLAN 20 - IT
+- VLAN 30 - SALES
+- VLAN 40 - SERVERS
+
+Each department has its own network.
+
+## 2. Access Control List (ACL)
+
+An extended ACL was configured on the company router.
+
+- HR cannot access the Web Server.
+- SALES cannot access the Web Server.
+- IT is allowed to access the Web Server.
+- Other traffic is permitted by the ACL rules.
+
+## 3. SSH Remote Management
+
+SSH version 2 was enabled on COMPANY-RTR.
+
+Local authentication is used for remote access, and Telnet access is disabled.
+
+## 4. NAT/PAT
+
+NAT overload allows internal devices to communicate with the simulated external network using the company router's WAN interface.
+
+## 5. Network Services
+
+DHCP, DNS and HTTP services are hosted in the server VLAN.
